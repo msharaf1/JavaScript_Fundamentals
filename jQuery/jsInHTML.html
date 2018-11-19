@@ -9,32 +9,67 @@
 </head>
 <body>
     <div class="container">
+        <div class="text">
         <h1>Welcome to jQuery</h1>
             <p>This is a test for jQeury</p>
         <h2>Effects of jQuery</h2>
-<script>
-        $(document).ready(function(){
-            $("h2").click(function(){
-                $(this).hide();
-            });
-        });
-        $(document).ready(function(){
-            $("h2").click(function(){
-                $(this).show();
-            });
-        });
+            <p>This is a second test</p>
 
-        $(document).ready(function(){
-            $("phots").click(function(){
-                $(img).toggle();
-            });
-        });
-
-</script>
+        <button>Click to hide/show</button>
+        <div id="p1">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        
+    </div>
     <div class="photos">
         <img src="../jQuery/img/carlos-ibanez-1154987-unsplash.jpg" alt="example" height="300px" width="500">
-
     </div>
-    </div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+            $(document).ready(function(){
+                $("h2").click(function(){
+                    $(this).hide();
+                });
+            });
+        
+
+
+            $(document).ready(function(){
+                $(".photos").click(function(){
+                    $(this).toggle();
+                });
+            });
+
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#p1").toggle();
+                });
+            });
+            
+
+    </script>
+</div>   
 </body>
 </html>
