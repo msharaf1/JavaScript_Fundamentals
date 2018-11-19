@@ -15,15 +15,16 @@
         <h2>Effects of jQuery</h2>
             <p>This is a second test</p>
 
-        <button>Click to hide/show</button>
-        <div id="p1">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
+            <div id="p1">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <button>Click to hide/show</button>
         
     </div>
     <div class="photos">
-        <img src="../jQuery/img/carlos-ibanez-1154987-unsplash.jpg" alt="example" height="300px" width="500">
+        <img src="../jQuery/img/carlos-ibanez-1154987-unsplash.jpg" alt="example" height="300px" width="500" />
     </div>
+    <label id="ph1">Show/Hide photos</label>
 
 
 
@@ -57,8 +58,8 @@
 
 
             $(document).ready(function(){
-                $(".photos").click(function(){
-                    $(this).toggle();
+                $("label").click(function(){
+                    $(".photos").toggle();
                 });
             });
 

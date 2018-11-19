@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Part1</title>
+
+    <script>
+            $(document).ready(function(){
+                $("h1").on({
+                    mouseenter: function(){
+                        $(this).css("background-color", "lightgray");
+                    },  
+                    mouseleave: function(){
+                        $(this).css("background-color", "lightblue");
+                    }, 
+                    click: function(){
+                        $(this).css("background-color", "yellow");
+                    }  
+                });
+            });
+            </script>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to jQuery</h1>
+        <p>Welcome to jQuery: Fundamentals.</p>
+    <form action="/" method="POST">
+        <input type="text" name="firstName" id="fN" />
+        <input type="text" name="email" id="eM" />
+        
+        <input type="submit">
+    </form>
+    </div>
+
+
+<!-- <script>
+    $(document).ready(function(){
+        $("input").focus(function(){
+            $(this).css("background-color", "#cccccc");
+        });
+    });
+
+    $(document).ready(function(){
+        $("input").blur(function(){
+            $(this).css("background-color", "lightblue");
+        });
+    });
+
+    $(document).ready(function(){
+        $("h1").on({
+            mouseenter: function(){
+                $("this").css("background-color", "lightgray");
+            },
+            mouseleave: function(){
+                $(this).css("background-color", "lighblue");
+            },
+            click: function(){
+                $(this).css("background-color", "lightgreen");
+            }
+        });
+    });
+
+</script> -->
+    <h1>Test</h1>
+</body>
+</html>
