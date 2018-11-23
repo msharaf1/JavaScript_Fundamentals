@@ -6,46 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Pt JS Script</title>
-</head>
-<body>
-    <div class="container">
-        <div class="text">
-        <h1>Welcome to jQuery</h1>
-            <p>This is a test for jQeury</p>
-        <h2>Effects of jQuery</h2>
-            <p>This is a second test</p>
-
-            <div id="p1">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-            <button>Click to hide/show</button>
-        
-    </div>
-    <div class="photos">
-        <img src="../jQuery/img/carlos-ibanez-1154987-unsplash.jpg" alt="example" height="300px" width="500" />
-    </div>
-    <label id="ph1">Show/Hide photos</label>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <script>
@@ -53,8 +13,16 @@
                 $("h2").click(function(){
                     $(this).hide();
                 });
+               // $("")
             });
-        
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("p").hide();
+                });
+                $("#show").click(function(){
+                    $("p").show();
+                });
+            });
 
 
             $(document).ready(function(){
@@ -71,6 +39,35 @@
             
 
     </script>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+        <h1>Welcome to jQuery</h1>
+            <p>This is a test for jQeury</p>
+        <h2>Effects of jQuery</h2>
+            <p>This is a second test</p>
+
+            <div id="p1">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <button>Click to hide/show</button>
+
+        
+    </div>
+    <div class="photos">
+        <img src="../jQuery/img/carlos-ibanez-1154987-unsplash.jpg" alt="example" height="300px" width="500" />
+    </div>
+    <label id="ph1">Show/Hide photos</label>
+
+    <p>If you click on the "Hide" button, I will disappear.</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+
+
+
 </div>   
 </body>
 </html>
