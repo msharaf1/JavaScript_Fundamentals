@@ -1,4 +1,27 @@
-//check income limit:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Medicaid Elegiblity</h1>
+<!-- <form>
+    <input type="number" id = "hz" name="householdSize">
+    <input type="number" id="ml" name="maxIncomeLevePerYear">
+    <button onclick="testElegibility(houseHoldSize, maxIncomeLevePerYear);">Submit</button>
+</form> -->
+
+<p id="hz"></p>
+<p id="ml"></p>
+<p id="ey"></p>
+
+<script>
+    let houseHoldSize = prompt("Enter number of People");
+    let maxIncomeLevePerYear = prompt("Please enter your annual income");
+    //check income limit:
 function testElegibility(householdSize, maxIncomeLevePerYear){
 // let householdSize = 0;
 // let maxIncomeLevePerYear = 0;
@@ -21,6 +44,7 @@ if(householdSize === 1 && maxIncomeLevePerYear <=16146 ){
 } else if(householdSize === 8 && maxIncomeLevePerYear <= 56365){
     console.log(elegibility = "You are elegible for Medicaid");
 } else if(householdSize >= 9){
+    
     function famiOver8(householdSize, maxIncomeLevePerYear){
         let maxNumberOfFamiliy = 8;// for each extra person add 5746 to 56365
         let maxLimitAmount = 56365;//Maximum limit amount for family of 8 determind by VA.
@@ -38,16 +62,33 @@ if(householdSize === 1 && maxIncomeLevePerYear <=16146 ){
                 if(maxIncomeLevePerYear <= elegLimit){
                     endResult = "You are elegible";
                 } else {
-                    endResult = "You are not eligible From Inner Func";
+                    endResult = "You are not eligible";
                 }
                 console.log(endResult);
                 return endResult;
             }
         
-        elegiblity = famiOver8(householdSize, maxIncomeLevePerYear);
+            elegibility = famiOver8(householdSize, maxIncomeLevePerYear);
 } else{
     console.log(elegibility = "You are Not elegible for Medicaid");
 }
+    if(elegibility!= null ){
+        document.getElementById("hz").innerHTML = "Your House Hold size is: " + houseHoldSize;
+        document.getElementById("ml").innerHTML = "You are currenlty making: $" + maxIncomeLevePerYear;
+        document.getElementById("ey").innerHTML = elegibility;
+    }
 
 }
-testElegibility(10, 90000);
+testElegibility(houseHoldSize, maxIncomeLevePerYear);    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>
