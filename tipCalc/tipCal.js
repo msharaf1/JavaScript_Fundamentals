@@ -24,7 +24,7 @@ function calcTip(billAmount){
     }
     console.log(bill);
     if(billAmount!= null ){
-        document.getElementById("tPercent").innerHTML = ("Bill Amount is : $ "+ billAmount +", Tip Ampount is $ " +tip + ". Total is: $ " + bill);
+        document.getElementById("tPercent").innerHTML = ("Your Bill Amount is : $ "+ billAmount +", Tip Ampount is $ " +tip + ". Total is: $ " + bill);
     }
 
     if(billAmount!= null && billAmount !=NaN){
