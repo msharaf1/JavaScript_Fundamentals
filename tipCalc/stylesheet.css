@@ -1,0 +1,18 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width:50%
+}
+th {
+    text-align: left;
+}
+
+#bAmount {
+    color: green;
+}
+#pAmount {
+    color: blue;
+}
+#tAmount {
+    color: red;
+}
