@@ -40,3 +40,16 @@ console.log(jobSurvey("teacher", "Kamal"));
 
 let Khan = jobSurvey("desinger", "Rashid Khan");
 console.log(Khan);
+
+const interJob = function(job, name){
+    if(job ==="teacher"){
+        return name + " teaches coding at coding plus.";
+
+    } else if(job ==="soccer"){
+        return name + " " + "plays soccer";
+    } else {
+        name +" "+ "doesn't live in the city.";
+    }
+}
+console.log(interJob("teacher", "John"));
+console.log(interJob("soccer", "Kamal"));
