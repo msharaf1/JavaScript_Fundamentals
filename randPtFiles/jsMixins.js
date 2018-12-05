@@ -64,5 +64,54 @@ function Country(countryName, countryPopulation, highestTemp, lowestTemp){
 }
 
 let afghanistan = Country("Afghanistan", 35000000);
-console.log(afghanistan.countryName, afghanistan.countryPopulation, afghanistan.highestTemp);
+// console.log(afghanistan.countryName, afghanistan.countryPopulation, afghanistan.highestTemp);
 
+
+
+function Radio(mode){
+    let on = false;
+    return {
+        mode: mode,
+        turnOn: function(){ on = true},
+        isOn: function (){
+            return on;
+        }
+    };
+}
+
+let fmRadio = Radio("fm");
+fmRadio.on;
+//undefined
+fmRadio.isOn();
+// false
+fmRadio.turnOn();
+fmRadio.isOn();
+//********** */
+
+function IceCreamFactory(obj){
+    let isCold = true;
+    return Object.assign({}, obj, {melt: function(){
+        isCold = false;},
+        isCold: function(){
+            return isCold;
+        }
+    });
+}
+let iceCream = IceCreamFactory({});
+
+function ConeFactory(obj){
+    let isDry = true;
+
+    return Object.assign({}, obj, {
+        soggy: function(){
+            return isDry;
+        }
+    });
+}
+
+let iceCreamCone = IceCreamFactory(ConeFactory({}));
+
+// console.log(iceCreamCone);
+/* Udacity:
+Summary
+A factory function creates objects. It is invoked as normal function, not with the new operator. Functional mixins take things a bit further by accepting a mixin as an argument, copies properties and methods from the mixin, and returns a new object. */
