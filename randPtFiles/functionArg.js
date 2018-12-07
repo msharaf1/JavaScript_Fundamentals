@@ -11,11 +11,22 @@ function ArrayCalc (arr, fn){
 function calcAge(el){
     return 2019 - el;
 }
-let result = ArrayCalc(years, calcAge);
-// console.log(result);
+let ages = ArrayCalc(years, calcAge);
+// console.log(ages);
 
 function isOver18(el){
     return el >= 18;
 }
-let adults = ArrayCalc(result, isOver18);
-console.log(adults);
+let adults = ArrayCalc(ages, isOver18);
+// console.log(adults);
+
+function maxHeartRate(el){
+    if(el >=18 && el <= 81){
+        return Math.round(206.9 - (0.67 * el));
+    }else {
+        return -1;
+    }
+}
+
+let htRate = ArrayCalc(ages, maxHeartRate);
+console.log(htRate);
