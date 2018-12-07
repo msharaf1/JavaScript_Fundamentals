@@ -52,3 +52,14 @@ let person = (function(){
 // console.log(person.getName());
 // console.log("set name", person.setName("Timber"));
 // console.log(person.getName());
+
+let diana = (function(){
+    let secretIdentity = "Diana Prince";
+
+    return {
+        intrdouce: function(){
+            return `Hi! Iam ${secretIdentity}`;
+        }
+    };
+})();
+console.log(diana.intrdouce());
