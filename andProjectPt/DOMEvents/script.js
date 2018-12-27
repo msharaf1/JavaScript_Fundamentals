@@ -43,6 +43,7 @@
     const button = document.getElementById("enter");
     const input = document.getElementById("userinput");
     const ul = document.querySelector("ul");
+    const removeButton = document.getElementById("remove");
     
     //func length.
     function evalLength(){
@@ -70,5 +71,8 @@
         }
     }
 
-    button.addEventListener("click", createElList);
+
+
+    // button.addEventListener("click", createAfterClick);
     input.addEventListener("keypress", createAfterEnter);
+    removeButton.addEventListener("click", removeElList);
