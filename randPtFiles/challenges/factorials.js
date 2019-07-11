@@ -259,5 +259,70 @@ function confirmEnding(str, target) {
     }
   }
   
-  let test = confirmEnding("Bastian", "tian");
-  console.log(test);
+//   let test = confirmEnding("Bastian", "tian");
+//   console.log(test);
+
+function repeatStringNumTimes(str, num) {
+    let newStr = "";
+    if(num < 0){
+        return "";
+    }else {
+        for(let i=0; i < num; i++){
+            newStr += str;
+        }    
+        return newStr;
+
+    }
+  }
+  
+//   let test = repeatStringNumTimes("abc", -3);
+//   console.log(test);
+
+function truncateString(str, num) {
+    // Clear out that junk in your trunk
+    let nString = "";
+    if(str.length > num){
+        for(let i =0; i < num; i++){ nString += str[i]; }
+        return nString += "..."
+    }else{
+        return str;
+    }
+    // return nString;
+    // console.log(nString);
+  }
+  
+//   let test = truncateString("A-tisket a-tasket A green and yellow basket", 8);
+
+//   console.log(test);
+
+function findElement(arr, func) {
+    let num = 0;
+
+    for(let i =0; i <arr.length; i++){
+        num = arr[i];
+        // if(func(num)){
+        //     return num;
+        // }
+        if(testNum(num)){
+            return num;
+        }
+    }
+    return undefined;
+  }
+  function testNum(num){
+      return num % 2 === 0;
+  }
+//   console.log(testNum(8)); //returns true;
+
+//   let test = findElement([1, 2, 3, 4], num => num % 2 === 0);
+let test = findElement([1,2,3,4], testNum(9))
+//   console.log(test);
+
+
+
+  function booWho(bool) {
+    // What is the new fad diet for ghost developers? The Boolean.
+    return (typeof bool === "boolean");
+  }
+  
+  console.log(booWho(true));
