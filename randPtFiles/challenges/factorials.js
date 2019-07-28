@@ -315,7 +315,7 @@ function findElement(arr, func) {
 //   console.log(testNum(8)); //returns true;
 
 //   let test = findElement([1, 2, 3, 4], num => num % 2 === 0);
-let test = findElement([1,2,3,4], testNum(9))
+// let test = findElement([1,2,3,4], testNum(9))
 //   console.log(test);
 
 
@@ -325,4 +325,130 @@ let test = findElement([1,2,3,4], testNum(9))
     return (typeof bool === "boolean");
   }
   
-  console.log(booWho(true));
+//   console.log(booWho(true));
+
+// function titleCase(str) {
+//     let stringArrays = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M","N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+//     var nString = str.toLowerCase().split(" ")
+//     let finalStr ="";
+//     for(let i=0; i<nString.length; i++){
+//         finalStr = str.replace
+//         finalStr += nString[i].charAt(0).toUpperCase() + nString[i].slice(1 );
+//         console.log(finalStr);
+//     }
+//     console.log(nString); console.log(finalStr)
+    
+//   }
+//   titleCase("I'm a little tea pot");
+  
+
+
+
+
+  var toTitleCase = function (str) {
+	str = str.toLowerCase().split(' ');
+	for (var i = 0; i < str.length; i++) {
+		str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+	}
+	return str.join(' ');
+};
+//   console.log(toTitleCase("I'm a little tea pot"));
+//   console.log(titleCase("sHoRt AnD sToUt"));
+
+// function frankenSplice(arr1, arr2, n) {
+//     // It's alive. It's alive!
+//     // arr1.splice(n,0, arr2);
+//     let nArr = arr2.slice();
+//     console.log(nArr)
+//     for(let i= arr1.length-1; i >= 0; i--){
+//         nArr.splice(n,0, arr1[i]);
+        
+//     }
+    
+//     return nArr;
+    
+//   }
+
+  /*
+  function frankenSplice(arr1, arr2, n) {
+    // It's alive. It's alive!
+    let localArray = arr2.slice();
+    for (let i = 0; i < arr1.length; i++) {
+      localArray.splice(n, 0, arr1[i]);
+      n++;
+    }
+    return localArray;
+  }
+  */
+//   let testF = frankenSplice([1, 2, 3], [4, 5, 6], 1);
+//   console.log(testF);
+
+function nullCheck(arr){
+    
+    for(let i=0; i < arr.length; i++){
+        if(arr[i] === false || arr[i] === null || arr[i] === undefined || Number.isNaN(arr[i]) || arr[i] < 1 ||arr[i] === ""){
+            arr.splice(i,1);
+            i--;
+        }
+    }
+    return arr;
+}
+// let testnullCheck = nullCheck( ["test",false, null, 0, "", undefined, NaN, true,1, "Hello"]);
+// console.log(testnullCheck)
+
+function sortArrays(arr){
+    arr.sort(function(a, b){
+        return a - b;
+    });
+    return arr;
+}
+function getIndexToIns(arr, num) {
+    sortArrays(arr);
+    // let newNum = 0;
+    for(let i = 0; i < arr.length; i++){
+        if( arr[i]>= num ){
+            // newNum = i;
+            return i;
+            // console.log(i +",  " +arr[i]);
+        }
+    }
+    // console.log(newNum);
+    return num;
+    
+  }
+  
+//  let testGetIndex =  getIndexToIns([3,6,5,-9,7], 5);
+// console.log(testGetIndex)
+
+/*
+function getIndexToInsFCC(arr, num) {
+    arr.sort(function(a, b) {
+      return a - b;
+    });
+  
+    for (var a = 0; a < arr.length; a++) {
+      if (arr[a] >= num)
+        return a;
+    }
+    console.log("Arrya's length: "+arr.length)
+    return arr.length; 
+  }
+  console.log(getIndexToInsFCC([3,6,5,-9,7], 5));
+*/
+
+function mutation(arr) {
+
+    let a = arr[0]
+    let b = arr[1];    
+    for(let i =0; i < arr.length; i++){
+        console.log(a[i]);
+        console.log(b[i]);
+        // if(){
+
+        // }
+    }
+    
+    return arr;
+  }
+  
+  mutation(["hello", "hey"]);
