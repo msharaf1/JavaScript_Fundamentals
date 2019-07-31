@@ -436,6 +436,13 @@ function getIndexToInsFCC(arr, num) {
   console.log(getIndexToInsFCC([3,6,5,-9,7], 5));
 */
 
+/*
+Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array.
+For example, ["hello", "Hello"], should return true because all of the letters in the second string are present in the first, ignoring case.
+The arguments ["hello", "hey"] should return false because the string "hello" does not contain a "y".
+Lastly, ["Alien", "line"], should return true because all of the letters in "line" are present in "Alien".
+Remember to use Read-Search-Ask if you get stuck. Write your own code.
+*/
 function mutation(arr) {
 
     let a = arr[0]
@@ -452,3 +459,27 @@ function mutation(arr) {
   }
   
   mutation(["hello", "hey"]);
+
+  function chunkArrayInGroups(arr, size) {
+    // Break it up.
+  
+      let temp = [];
+      let newArr = [];
+  
+        for (let i = 0; i < arr.length; i++) {
+          if (i % size !== size - 1)
+            temp.push(arr[i]);
+          else {
+            temp.push(arr[i]);
+            newArr.push(temp);
+            temp = [];
+          }
+        }
+  
+        if (temp.length !== 0)
+          newArr.push(temp);
+        return newArr;
+  }
+  
+  console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
+  

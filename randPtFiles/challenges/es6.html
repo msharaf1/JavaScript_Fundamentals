@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6 Free Code Camp</title>
+    <style>
+        body{
+            background-color:lightgray;
+        }
+        h1 {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Free Code Camp ES6 Practice</h1>
+    
+<script>
+
+// var myConcat = function(arr1, arr2) {
+//   "use strict";
+//   return arr1.concat(arr2);
+// };
+// // test your code
+// // console.log(myConcat([1, 2], [3, 4, 5]));
+
+// const myConcatT = (arr1, arr2) => {
+//     return arr1.concat(arr2);
+// }
+// console.log(myConcatT([1, 2], [3, 4, 5]));
+
+
+// const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+// const squareList = (arr) => {
+//   "use strict";
+//   // change code below this line
+//   const squaredIntegers = arr.filter(Number.isInteger);
+
+//   // change code above this line
+//   return squaredIntegers;
+// };
+// // test your code
+// const squaredIntegers = squareList(realNumberArray);
+// console.log(squaredIntegers);
+
+// const [a, b, ...arr] = [1, 2, 3, 4, 5, 7];
+// console.log(a, b); // 1, 2
+// console.log(arr); // [3, 4, 5, 7]
+
+
+
+
+
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["id-blacklist", "no-dup-keys"]
+};
+
+const displayArr = result.failure;
+// console.log(displayArr)
+
+
+test = [ `<li class="text-warning">no-var</li>`,
+ `<li class="text-warning">var-on-top</li>`, 
+ `<li class="text-warning">linebreak</li>` ]
+
+
+const testResult = result.failure.map((item) => {
+        return `<li class="text-warning">${item}</li>`;
+});
+
+console.log(testResult);
+
+// console.log(test);
+// var officers = [
+//   { id: 20, name: 'Captain Piett' },
+//   { id: 24, name: 'General Veers' },
+//   { id: 56, name: 'Admiral Ozzel' },
+//   { id: 88, name: 'Commander Jerjerrod' }
+// ];
+
+// var officersIds = [];
+// // officers.forEach(function (officer) {
+// //   officersIds.push(officer.id);
+// // });
+
+
+// // officers.forEach((officer) => {
+// //     return officersIds.push(officer.id);
+// // });
+
+
+// const officerIds = officers.map((officer, id) => officer.id);
+
+// console.log(officersIds);
+
+// var pilots = [
+//   {
+//     id: 10,
+//     name: "Poe Dameron",
+//     years: 14,
+//   },
+//   {
+//     id: 2,
+//     name: "Temmin 'Snap' Wexley",
+//     years: 30,
+//   },
+//   {
+//     id: 41,
+//     name: "Tallissan Lintra",
+//     years: 16,
+//   },
+//   {
+//     id: 99,
+//     name: "Ello Asty",
+//     years: 22,
+//   }
+// ];
+
+// const totalYears = pilots.reduce((accum, pilot) => accum + pilot.years, 0);
+
+// console.log(totalYears)
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
