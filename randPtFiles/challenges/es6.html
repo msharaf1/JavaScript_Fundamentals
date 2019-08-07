@@ -123,9 +123,13 @@ console.log(testResult);
 // const totalYears = pilots.reduce((accum, pilot) => accum + pilot.years, 0);
 
 // console.log(totalYears)
-
-
-
+import {bigOak} from "crow-tech";
+bigOak.readStorage("food caches", caches => {
+  let firstCache = caches[0];
+  bigOak.readStorage(firstCache, info => {
+    console.log(info);
+  });
+});
 
 
 

@@ -223,6 +223,222 @@ members.set("Liam", 20.16);
 members.set("Sophia", 0);
 members.set("Marcus", 10.25);
 
-console.log(members.has("Liam"));
-let Liam = members.get("Liam");
-console.log(Liam);
+// // console.log(members.has("Liam"));
+// let Liam = members.get("Liam");
+// // console.log(Liam);
+
+// let iteratorObjForKeys = members.keys();
+// iteratorObjForKeys.next()
+// iteratorObjForKeys.next();
+
+// let iteratorObjForValues = members.values();
+// iteratorObjForValues.next();
+
+// for(let key of members.keys()){
+//     console.log(key);
+// }
+// for(let value of members.values()){
+//     console.log(value);
+// }
+
+// for(let member of members){
+//     console.log(member);
+// }
+
+
+//fix it.
+// for(let member of members){
+//     // console.log(member);
+//     let key = member.keys();
+//     let value = member.values();
+//         console.log(member.reduce()
+//     // // console.log(key, value);
+//     // console.log("It is Key: " +key);
+// }
+
+
+// members.forEach((value, key) => console.log(key, value));
+
+// let shoppingList = ["James", "King", "Queen", "Jinny"];
+//     let [a,b,c] = shoppingList;
+//     console.log(`${ a} ${ b} ${ c } of London`);
+
+// let studentInfo = {
+//     firstName: "James",
+//     lastName: "King",
+//     spouseName: "Queen",
+//     age: 55
+// }
+
+// let {firstName, age} = studentInfo;
+// console.log(firstName +" " +age);
+
+//********************************************* */
+
+const book1 = { title: 'Pride and Prejudice', author: 'Jane Austen' };
+const book2 = { title: 'The Catcher in the Rye', author: 'J.D. Salinger' };
+const book3 = { title: 'Gulliver’s Travels', author: 'Jonathan Swift' };
+
+const library = new WeakMap();
+library.set(book1, true);
+library.set(book2, false);
+library.set(book3, true);
+//use let to review book1 = null.
+// console.log(library);
+
+// new Promise(function(){
+//     window.setTimeout(function createSundae(flavor = "chocloate"){
+//         const sundae = {};
+//     }, Math.random() * 2000);
+// });
+
+// new Promise(function(resolve, reject){
+//     window.setTimeout(function createSundae(flavor = "Vanila"){
+//         const sundae = {};
+//     }, Math.random() * 100);
+// });
+
+
+
+// function zeroArray(m, n) {
+//     // Creates a 2-D array with m rows and n columns of zeroes
+//     let newArray = [];
+//     for (let i = 0; i < m; i++) {
+//         // Adds the m-th row into newArray
+//         let row = [];
+      
+//       for (let j = 0; j < n; j++) {
+//         // Pushes n zeroes into the current row to create the columns
+//         row.push("rows");
+//       }
+//       // Pushes the current row, which now has n zeroes in it, to the array
+//       newArray.push(row);
+//     //   console.log(row)
+//     }
+//     // console.log(newArray);
+//     return newArray;
+//   }
+  
+//   let matrix = zeroArray(3, 2);
+//   console.log(matrix);
+/*
+We'll pass you an array of two numbers. Return the sum of those two numbers-
+plus the sum of all the numbers between them.
+The lowest number will not always come first.
+*/
+function sumAll(arr) {
+    let sum = 0;
+    // for(let i = 0; i < arr.length; i++){
+    //   sum += arr[i];
+    // }
+    if(arr[0] < arr[1]){
+        let i = arr[0];
+        while(i <= arr[1]){
+            sum += i;
+            console.log(i);
+            i++;
+        }
+    }
+    else if(arr[0] > arr[1]){
+        let i = arr[0];
+        while(i >= arr[1]){
+            sum += i;
+            console.log(i);
+            i--;
+        }
+    }
+ 
+    // console.log(sum);
+    return sum;
+  }
+  
+//   console.log(sumAll([1, 4]));
+
+//   console.log(sumAll([4, 1]));
+
+function findSumAll(arr){
+    let maxNum = Math.max(...arr);
+    let minNum = Math.min(...arr);
+    let sum = 0;
+    let i = minNum;
+    while(i <= maxNum){
+        sum += i;
+        i++
+        console.log(i);
+    }
+    console.log(sum);
+
+}
+// findSumAll([4,1]);
+function sumAll(arr) {
+    var max = Math.max(arr[0], arr[1]);
+    var min = Math.min(arr[0], arr[1]);
+    var temp = 0;
+    for (var i=min; i <= max; i++){
+        temp += i;
+    }
+  return(temp);
+}
+
+// sumAll([1, 4]);
+function sumAll(arr) {
+    // Buckle up everything to one!
+  
+    // Using ES6 arrow function (one-liner)
+    var sortedArr = arr.sort((a,b) => a-b);
+    var firstNum = arr[0];
+    var lastNum = arr[1];
+    // Using Arithmetic Progression summing formula
+  
+    var sum = (lastNum - firstNum + 1) * (firstNum + lastNum) / 2;
+    return sum;
+  }
+
+  function sumAll(arr) {
+    var sum = 0;
+    for (var i = Math.min(...arr); i <= Math.max(...arr); i++){
+        sum += i;
+    }
+  return sum;
+}
+
+sumAll([1, 4]);
+
+/*
+Compare two arrays and return a new array with any items only found in one of 
+the two given arrays, but not both. In other words, return the symmetric 
+difference of the two arrays.
+*/
+
+function diffArray(arr1, arr2) {
+    var newArr = [];
+    // Same, same; but different.
+    for(let i=0; i < arr2.length; i++){
+        for(let j=i; j < arr1[i]; j++){
+            if(arr2[i] !== arr1[j]){
+                if(arr1[j] === null || arr1[j] ===undefined){
+                    // break;
+                    console.log(`From arr[j] ${arr2[j]} arr[i] ${arr1[i]}`);
+                }
+                newArr.push(arr1[i]);
+            }
+            else if(arr1[j] !== arr2[i]){
+                    if(arr2[i] === null || arr2[i] ===undefined){
+                        break;
+                        console.log(`From arr[j] ${arr2[j]}`);
+                }
+                newArr.push(arr2[i]);
+            }
+            // if(arr1[i] !== arr2[j]){
+            //     newArr.push(arr1[i])
+            // }
+            // else if(arr2[j] !== arr1[i]){
+            //     newArr.push(arr2[j]);
+            // }
+            console.log(`I: ${arr1[i]} J: ${arr2[j]}`)
+        }
+    }
+    return newArr;
+  }
+  
+  console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
