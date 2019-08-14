@@ -238,13 +238,29 @@ function findStrWindex(str, letter){
 //console.log(journalEvents(["carrot", "exercise", "weekend", "bread"]));
 //// → ["carrot", "exercise", "weekend", "bread", …]
 
-let findRange = ((start, end) =>{
-    let count = 0;
-    let numbers = [];
-    while(start <= end){
-        numbers.push(start);
-        start++;
+//let findRangeSum = ((start, end) =>{
+//    let sum =0;
+//    
+//    let numbers = [];
+//    while(start <= end){
+//        numbers.push(start);
+//        sum += start;
+//        start++;
+//    }
+//    return sum;
+//});
+//console.log(findRangeSum(1, 2))
+
+let findSumArray = ((arr)=>{
+    let sumArray = 0;
+    let count =0;
+    while(count < arr.length){
+        sumArray += (arr[count]);
+        count++;
     }
-    return numbers
-});
-//console.log(findRange(10, 20))
+    return sumArray;
+ })
+
+
+//console.log(findSumArray([1,2,3,4,5]));
+
