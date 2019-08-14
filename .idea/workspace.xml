@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0fd728f-1343-4b8d-9243-975ce54d940c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/randPtFiles/challenges/factorials.js" beforeDir="false" afterPath="$PROJECT_DIR$/randPtFiles/challenges/factorials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/randPtFiles/challenges/chap5.js" beforeDir="false" afterPath="$PROJECT_DIR$/randPtFiles/challenges/chap5.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,10 +17,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/randPtFiles/challenges/factorials.js">
+        <entry file="file://$PROJECT_DIR$/randPtFiles/challenges/chap5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+            <state relative-caret-position="155">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -33,13 +34,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/randPtFiles/challenges/factorials.js" />
+        <option value="$PROJECT_DIR$/randPtFiles/challenges/chap5.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="742" />
     <option name="y" value="23" />
-    <option name="width" value="1552" />
-    <option name="height" value="887" />
+    <option name="width" value="938" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -75,11 +78,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Custom" />
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -112,16 +116,25 @@
       <workItem from="1562635510043" duration="111000" />
       <workItem from="1562635655881" duration="244000" />
       <workItem from="1562677487664" duration="38000" />
+      <workItem from="1565189629572" duration="28000" />
+      <workItem from="1565189677053" duration="77000" />
+      <workItem from="1565189765145" duration="58000" />
+      <workItem from="1565189826657" duration="23000" />
+      <workItem from="1565189868848" duration="46000" />
+      <workItem from="1565189925071" duration="96000" />
+      <workItem from="1565190032862" duration="212000" />
+      <workItem from="1565190257413" duration="24000" />
+      <workItem from="1565190293683" duration="64000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="644000" />
+    <option name="totallyTimeSpent" value="1272000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1552" height="887" extended-state="0" />
+    <frame x="742" y="23" width="938" height="1027" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22468975" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.082878955" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -135,7 +148,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run Dashboard" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.36071888" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.304679" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -147,8 +160,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/randPtFiles/challenges/factorials.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+        <state relative-caret-position="95">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/randPtFiles/challenges/chap5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
