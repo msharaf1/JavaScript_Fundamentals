@@ -264,3 +264,12 @@ let findSumArray = ((arr)=>{
 
 //console.log(findSumArray([1,2,3,4,5]));
 
+let jounrnal = {
+    "squirrel": false,
+    "events":["work", "touched tree", "pizza" ,"running"]
+}
+
+let string = JSON.stringify({squirrel:false,
+                            events:["weekend"]})
+console.log(string);
+console.log(JSON.parse(string).journal);
