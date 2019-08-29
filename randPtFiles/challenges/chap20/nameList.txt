@@ -1,0 +1,2 @@
+let shopListing = [3,45,66,7,86,5,544,9]
+There are 5 cities on my list that I need to visit. 1. London, 2. Berlin, 3. Madriad, 4. San Diego, 5. Paris
