@@ -14,3 +14,9 @@ catPic.addEventListener("click", event => {
     counts.innerText = `Cat clicked ${counter} times`;
 });
 
+let button = document.getElementById("p1");
+let countNum = 0;
+button.onclick = function(){
+  countNum+=1;
+  button.innerHTML = "Clicked" + countNum + " Times";
+}

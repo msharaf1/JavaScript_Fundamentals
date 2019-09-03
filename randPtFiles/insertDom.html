@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Dom Insertion</title>
+  </head>
+  <body>
+    <div id="mainContainer">
+      <h1 id="head1">JavaScript is the future</h1>
+  <!-- beforebegin -->
+    <p>
+        <!-- afterbegin -->
+        Existing text/HTML content
+        <!-- beforeend -->
+        monitorEvents(document);
+
+    </p>
+    <!-- afterend -->
+    </div>
+  <script type="text/javascript">
+    // const mainDiv = document.querySelector("#mainContainer");
+    // const parag = document.getElementsByTagName('p');
+    // const htmlTextToAdd = "<h2>JavaScrit with the web is fun!</h2>"
+    // // p.style.cssText = 'color: blue; background-color: orange; font-size: 3.5em';
+    // // .setAttribute('style', 'color: blue; background-color: orange; font-size: 3.5em;');
+    // let h = document.createElement("h1");
+    // let textNode = document.createTextNode("JavaScript is the Future");
+    // h.appendChild(textNode)
+    // console.log(h)
+    // mainDiv.insertAdjacentHTML("afterend", htmlTextToAdd);
+    // mainDiv.insertAdjacentHTML("beforeend", h);
+    let hOne = document.querySelector("#head1");
+    console.log(hOne);
+    // let count = 0;
+    hOne.addEventListener("click", function(){
+      // console.log("You clicked")
+      hOne.style.backgroundColor="purple";
+        hOne.addEventListener("click", function(){
+        hOne.style.backgroundColor="";
+      })
+    });
+
+    const myCustomDiv = document.createElement('div');
+
+function respondToTheClick(evt) {
+    console.log('A paragraph was clicked: ' + evt.target.textContent);
+}
+
+for (let i = 1; i <= 200; i++) {
+    const newElement = document.createElement('p');
+    newElement.textContent = 'This is paragraph number ' + i;
+
+    myCustomDiv.appendChild(newElement);
+}
+
+document.body.appendChild(myCustomDiv);
+
+myCustomDiv.addEventListener('click', respondToTheClick);
+
+document.querySelector('#content').addEventListener('click', function (evt) {
+    if (evt.target.nodeName === 'SPAN') {  // ← verifies target is desired element
+        console.log('A span was clicked with text ' + evt.target.textContent);
+    }
+});
+
+/ check using capital letters
+if (evt.target.nodeName === 'SPAN') {
+    console.log('A span was clicked with text ' + evt.target.textContent);
+}
+
+> // convert nodeName to lowercase
+if (evt.target.nodeName.toLowerCase() === 'span') {
+    console.log('A span was clicked with text ' + evt.target.textContent);
+}
+
+let timeRecord = performance.now();
+
+    // console.log(count);
+
+
+
+  </script>
+
+  </body>
+</html>
